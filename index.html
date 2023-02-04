@@ -38,7 +38,7 @@
         <meta content='https://assets.republic.com/assets/favicons/browserconfig-3bbb89e1165a27da10a48dbb42513a5f894b947963a2adbc9c35665cf3bc2360.xml' name='msapplication-config'>
         <meta content='#ceebff' name='msapplication-TileColor'>
         <meta content='#ceebff' name='theme-color'>
-
+		<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -65,7 +65,25 @@
 <link rel='stylesheet' id='wp-block-library-css'  href='https://powidian.com/wp/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
 <link rel='stylesheet' id='stylesheet-css'  href='assets/powidian.generic.rev-589875fa91036a247125c370e6259045.css' type='text/css' media='all' />
 <link rel='shortlink' href="#" />
-
+<style>.fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-video {
+    width: auto;
+    height: 100%;
+  }
+}</style>
 	</head>
 
 	<body class="firefox desktop dom-content-loaded" >
@@ -244,9 +262,14 @@
 	<span class="txt">Scroll</span>
 </div>
 
-            <div class="container-canvas js-fixed-video">
-            <canvas class="js-canvas-webgl"></canvas>
-        </div>
+            <div class="container-canvas js-fixed-video" style=""> 
+	<video loop muted autoplay class="fullscreen-video">
+        <source src="assets/Finance.mp4" type="video/mp4">
+        <!-- <source src="assets/Finance.mp4" type="video/mp4"> -->
+    </video>
+			
+            <!-- <canvas class="js-canvas-webgl"></canvas> -->
+         </div> 
     
           
     
@@ -1272,7 +1295,7 @@ valuation cap
 
 </div>
 
-<div class="s-container s-gridMaxXs24" style="display: block; text-align: center;">
+<div class="s-container s-gridMaxXs24" style="display: block; text-align: center;padding-bottom: 6em;">
 <div class="u-displayFlex u-alignItemsEnd u-blockXsOnly">
 <div data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
