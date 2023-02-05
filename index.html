@@ -309,12 +309,12 @@
 
 
     </div>
-<div id="wrapper" style="display:block;justify-content:center;position:relative;">
+<div id="wrapper" style="display:grid;align-items:center;position:relative;">
 
 		<div class="content-area">
 			<div class="container-fluid">
 				<div class="main">		
-						<div class="col-md">
+						<div class="col-md" style="max-width: 640px;">
 								<div class="box  mt-4">
 									<div id="linechart"> </div>
 								</div>
@@ -442,6 +442,10 @@ and
             <div class="right-content__image">
                     <picture class="ct--image ">
 		<img src="https://powidian.com/app/uploads/2022/11/barrage-home.jpeg" alt="">
+		<!-- <video loop muted autoplay class="fullscreen-video">  -->
+         <!-- <source src="assets/Analysis.mp4" type="video/mp4"> -->
+        <!-- <source src="assets/Finance.mp4" type="video/mp4"> -->
+   <!-- </video>  -->
 </picture>
 
 
@@ -1035,7 +1039,13 @@ Crypto
 					
 			<div class="right-content__image">
 									    <picture class="ct--image ">
-		<img src="https://powidian.com/app/uploads/2022/10/vehicule-hybrid.jpg" alt="">
+		<!-- <img src="https://powidian.com/app/uploads/2022/10/vehicule-hybrid.jpg" alt=""> -->
+		 <picture class="ct--image ">
+		<img src="https://powidian.com/app/uploads/2022/11/barrage-home.jpeg" alt="">
+		<!-- <video loop muted autoplay class="fullscreen-video">  -->
+        
+       <!-- <source src="assets/Finance.mp4" type="video/mp4"> -->
+   <!-- </video>  -->
 </picture>
 
 
@@ -1965,7 +1975,7 @@ var optionsLine = {
   },
   series: [
     {
-      name: "Apple",
+      name: "We",
       data: generateMinuteWiseTimeSeries(
         new Date("12/12/2016 00:20:00").getTime(),
         12,
@@ -1976,7 +1986,7 @@ var optionsLine = {
       )
     },
     {
-      name: "Microsoft",
+      name: "Others Markets",
       data: generateMinuteWiseTimeSeries(
         new Date("12/12/2016 00:20:00").getTime(),
         12,
