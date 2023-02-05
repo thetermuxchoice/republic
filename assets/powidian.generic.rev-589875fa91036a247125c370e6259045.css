@@ -2023,7 +2023,8 @@ div#tarteaucitronServices {
  position:relative;
  grid-column:2 / 14;
  color:#fff;
- text-align:center
+ text-align:center;
+ top:25%
 }
 @media screen and (min-width: 1380px) {
  .ct--hero-1__title {
