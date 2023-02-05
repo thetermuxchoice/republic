@@ -632,7 +632,7 @@ body .screen-transition .txt-screen,
 .page.not-found .not-found-title {
  font-style:normal;
  font-weight:400;
- font-size:10.5rem;
+ font-size:5.5rem;
  line-height:11rem
 }
 @media screen and (max-width: 1280px) {
@@ -642,7 +642,7 @@ body .screen-transition .txt-screen,
  .ct--hero-4 .head__title,
  .contact-index__wrapper-bottom__content .button-send .label,
  .page.not-found .not-found-title {
-  font-size:7.5rem;
+  font-size:5.5rem;
   line-height:8rem
  }
 }
@@ -653,7 +653,7 @@ body .screen-transition .txt-screen,
  .ct--hero-4 .head__title,
  .contact-index__wrapper-bottom__content .button-send .label,
  .page.not-found .not-found-title {
-  font-size:6.5rem;
+  font-size:4.5rem;
   line-height:7rem
  }
 }
