@@ -1,11 +1,11 @@
-/* @font-face{ */
-    /* src:url(./assets/fontello-b92d26b22c6bea4f187d9425935f57ccc4376714b6692c54bf3c44f689bf3e1b.eot?6317962); */
-    /* src:url(./assets/fontello-b92d26b22c6bea4f187d9425935f57ccc4376714b6692c54bf3c44f689bf3e1b.eot?6317962#iefix) format("embedded-opentype"),url(./assets/fontello-f10b3a70fe841c205dee9e1203b7009870890d42646a62c2b5f8f7c99aa40d5d.woff2?6317962) format("woff2"),url(./assets/fontello-c43b79afa52a19bcbb46503ccbf462d61a861ebb65d08310ebeeef7d864337bb.woff?6317962) format("woff"),url(./assets/fontello-077ee454e1d6e8bc7184ee0fdd44e1596ac72e9d9571caf2a11f27a275fde6c6.ttf?6317962) format("truetype"),url(./assets/fontello-8859d45b5d2380aa42520740938222e628c0658b2aebac793ef56b2e7efb31fe.svg?6317962#fontello) format("svg"); */
+@font-face{
+    src:url(./assets/fontello-b92d26b22c6bea4f187d9425935f57ccc4376714b6692c54bf3c44f689bf3e1b.eot?6317962);
+    src:url(./assets/fontello-b92d26b22c6bea4f187d9425935f57ccc4376714b6692c54bf3c44f689bf3e1b.eot?6317962#iefix) format("embedded-opentype"),url(./assets/fontello-f10b3a70fe841c205dee9e1203b7009870890d42646a62c2b5f8f7c99aa40d5d.woff2?6317962) format("woff2"),url(./assets/fontello-c43b79afa52a19bcbb46503ccbf462d61a861ebb65d08310ebeeef7d864337bb.woff?6317962) format("woff"),url(./assets/fontello-077ee454e1d6e8bc7184ee0fdd44e1596ac72e9d9571caf2a11f27a275fde6c6.ttf?6317962) format("truetype"),url(./assets/fontello-8859d45b5d2380aa42520740938222e628c0658b2aebac793ef56b2e7efb31fe.svg?6317962#fontello) format("svg");
   
-   /* font-family:fontello; */
-    /* font-style:normal; */
-    /* font-weight:400 */
-/* } */
+   font-family:fontello;
+    font-style:normal;
+    font-weight:400
+}
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
