@@ -8392,8 +8392,8 @@ div#tarteaucitronServices {
 .ct--homepage-strate-3 {
  position:relative;
  display:grid;
- grid-template-columns:calc(var(--page-padding) - var(--grid-gap)) repeat(12, minmax(0px, 1fr)) calc(var(--page-padding) - var(--grid-gap));
- -moz-column-gap:var(--grid-gap);
+ /* grid-template-columns:calc(var(--page-padding) - var(--grid-gap)) repeat(12, minmax(0px, 1fr)) calc(var(--page-padding) - var(--grid-gap)); */
+ /* -moz-column-gap:var(--grid-gap); */
  column-gap:var(--grid-gap);
  width:100%
 }
