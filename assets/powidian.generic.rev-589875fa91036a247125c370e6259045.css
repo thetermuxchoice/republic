@@ -8356,10 +8356,11 @@ div#tarteaucitronServices {
 .ct--homepage-strate-1__right__content {
  position:relative;
  padding-bottom:40px;
- color:#fff
+ color:#fff;
+ text-align:center;
 }
 .ct--homepage-strate-1__right__link .ct--button {
- text-align:left
+ text-align:center
 }
 .ct--homepage-strate-1 .ct--word-line {
  --word-line-text-color: #fff;
