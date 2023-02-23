@@ -8337,7 +8337,7 @@ div#tarteaucitronServices {
  grid-template-columns:calc(var(--page-padding) - var(--grid-gap)) repeat(12, minmax(0px, 1fr)) calc(var(--page-padding) - var(--grid-gap));
  -moz-column-gap:var(--grid-gap);
  column-gap:var(--grid-gap);
- padding-top:25px
+ padding-top:45px
 }
 @media screen and (max-width: 640px) {
  .ct--homepage-strate-1__right {
@@ -8346,7 +8346,11 @@ div#tarteaucitronServices {
 }
 .ct--homepage-strate-1__right__wrapper {
  position:relative;
- grid-column:9 / 13
+ 
+ grid-column:7/ 10;
+  place-items: center;
+ /* justify-items:center; */
+ /* justify-items: center; */
 }
 .ct--homepage-strate-1__right__title {
  position:relative;
@@ -8356,11 +8360,10 @@ div#tarteaucitronServices {
 .ct--homepage-strate-1__right__content {
  position:relative;
  padding-bottom:40px;
- color:#fff;
- text-align:center;
+ color:#fff
 }
 .ct--homepage-strate-1__right__link .ct--button {
- text-align:center
+ text-align:left
 }
 .ct--homepage-strate-1 .ct--word-line {
  --word-line-text-color: #fff;
