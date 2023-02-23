@@ -2022,11 +2022,31 @@ div#tarteaucitronServices {
 }
 .ct--hero-1__title {
  position:relative;
- grid-column:2 / 14;
+ grid-column:2 / 8;
  color:#fff;
  text-align:center;
  top:25%;
 }
+
+.ct--hero-1__p{
+    position:relative;
+ grid-column:2 / 8;
+   color:#fff;
+ text-align:center; 
+     font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.chart__container{
+  position:relative;
+ grid-column:8 / 12;
+ color:#fff;
+ text-align:center;
+ top:25%;  
+}
+
 @media screen and (min-width: 1380px) {
  .ct--hero-1__title {
   max-width:75%;
