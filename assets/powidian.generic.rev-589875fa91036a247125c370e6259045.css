@@ -2025,7 +2025,7 @@ div#tarteaucitronServices {
  grid-column:2 / 8;
  color:#fff;
  text-align:center;
- top:25%;
+ top:-5%;
 }
 
 .ct--hero-1__p{
@@ -2044,7 +2044,7 @@ div#tarteaucitronServices {
  grid-column:8 / 12;
  color:#fff;
  text-align:center;
- top:25%;  
+ top:9%;  
 }
 
 @media screen and (min-width: 1380px) {
