@@ -2022,15 +2022,15 @@ div#tarteaucitronServices {
 }
 .ct--hero-1__title {
  position:relative;
- grid-column:2 / 8;
+ grid-column:1 / 7;
  color:#fff;
  text-align:center;
- top:-5%;
+ top:-9%;
 }
 
 .ct--hero-1__p{
     position:relative;
- grid-column:2 / 8;
+ grid-column:1 / 7;
    color:#fff;
  text-align:center; 
      font-style: normal;
@@ -2039,9 +2039,22 @@ div#tarteaucitronServices {
     line-height: 2.6rem;
 }
 
+.ct--hero-1__boton{
+    top:2;
+    justify-content:center;text-align:center;
+       position: relative;
+       grid-column:1 / 7;
+    display: inline-block;
+    padding-right: 18px;
+    transition: color 700ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap; 
+}
+
 .chart__container{
   position:relative;
- grid-column:8 / 12;
+ grid-column:7 / 12;
  color:#fff;
  text-align:center;
  top:9%;  
@@ -8313,7 +8326,7 @@ div#tarteaucitronServices {
  -moz-column-gap:var(--grid-gap);
  column-gap:var(--grid-gap);
  width:100%;
- padding:140px 0 240px
+ padding:0px 0 240px
 }
 @media screen and (max-width: 640px) {
  .ct--homepage-strate-1 {
