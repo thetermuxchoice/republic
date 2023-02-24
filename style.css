@@ -8369,7 +8369,7 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
 }
 .s-marginBottom1{
     margin-bottom:16px;
-	font-family:'Gelion';
+	font-family:'Gelion' !important;
 }
 .s-paddingBottom1{
     padding-bottom:16px
