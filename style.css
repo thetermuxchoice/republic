@@ -8368,7 +8368,8 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
     padding-top:14px
 }
 .s-marginBottom1{
-    margin-bottom:16px
+    margin-bottom:16px;
+	font-family:'Gelion';
 }
 .s-paddingBottom1{
     padding-bottom:16px
