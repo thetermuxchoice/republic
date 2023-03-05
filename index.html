@@ -62,7 +62,7 @@
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='wp-block-library-css'  href='assets/style.mini.css' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='wp-block-library-css'  href='assets/style.mini.css' type='text/css' media='all' /> -->
 <link rel='stylesheet' id='stylesheet-css'  href='assets/powidian.generic.rev-589875fa91036a247125c370e6259045.css' type='text/css' media='all' />
 <link rel='shortlink' href="#" />
 <style>.fullscreen-video {
@@ -89,10 +89,34 @@
       border-radius: 8px;
     left: -30px;
     background-color: #273241;
-    width: 680px;
-  display: inline-block;
+    width:139%;
+	
+  flex: 0 0 auto;
   box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
-}
+  }
+  
+  
+ 
+  
+  
+ @media only screen(max-width: 641px){
+ .chart__container {
+  width:100%;
+  left: 0px;grid-column:2/12;
+  }
+   }
+
+@media only screen(max-width: 1198px){
+.chart__container {
+  left: 0px;
+  width:100%;
+  grid-column:4/12;
+  }
+  }
+
+
+
+
 .row {
     display: block;
     vertical-align: middle;
@@ -103,6 +127,26 @@
 }
 
 
+ @media screen and (max-width: 768px) {
+  [data-aos] {
+    pointer-events: auto !important;
+  }
+
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+    opacity: 1 !important;
+  }
+
+  html:not(.no-js) [data-aos=fade-up] {
+    transform: none !important;
+  }
+}
+
+<!-- @media (max-width: 700px) { -->
+    <!-- .container { -->
+      <!-- width: 100%; -->
+      <!-- margin: 0 auto; -->
+    <!-- } -->
+  <!-- } -->
 </style>
 	</head>
 
@@ -328,10 +372,16 @@ Access vetted investment opportunities in startups, real estate, video games, an
 <!-- start chart.js -->
 
 <!-- end chart.js -->
-  <div data-aos="fade-left" class="chart__container">
-    <canvas id="chart" width="523" height="400"></canvas>
+<!-- <div class="ct--homepage-strate-1__right"> -->
+ 
+  <div data-aos="fade-left" class="chart__container" style="position: relative; max-height:400px;">
+    <!-- <canvas  class="mchart" id="chart" width="523" height="400"></canvas> -->
+	<canvas   id="chart" ></canvas>
   </div>
     </div>
+     
+    <!-- </div> -->
+    
 <!-- <div id="wrapper" style="display:grid;align-items:center;position:relative;"> -->
 
 		<!-- <div class="content-area"> -->
@@ -1628,6 +1678,7 @@ Made in SF/NYC
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
 		AOS.init({
+		 disable: window.innerWidth < 768,
 	    offset: 120,
 	    delay: 500,
 	    duration: 400,
@@ -1697,7 +1748,9 @@ var chart = new Chart(ctx, {
         backgroundColor:'#fff',
         displayColors:false,
            titleFontColor: '#000',
-        bodyFontColor: '#000'
+        bodyFontColor: '#000',
+        responsive:true,
+      maintainAspectRatio:false,
         
         },      
       legend: {
