@@ -1,67 +1,68 @@
 @font-face {
- font-family:'Gelion';
- src:url("./Gelion-Regular.woff2") format("woff2"),
- url("../fonts/Gelion-Regular.woff") format("woff");
- font-weight:normal;
+ font-display:swap;
+ src:url(./Inter-Light-26f23e61d92ac56673d279c7aa8df3d79242c342dba23e3dbb29cf0797a199c8.woff2?v=3.19) format("woff2"),
+ url(./Inter-Light-e0a6476b5a0f4bb445a15c9963635b3933954182c4d1da83b10fc94439cf3313.woff?v=3.19) format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:300
 }
 @font-face {
- font-family:'Gelion';
- src:url("./Gelion-Medium.woff2") format("woff2"),
- url("../fonts/Gelion-Medium.woff") format("woff");
- font-weight:500;
+ font-display:swap;
+ src:url(./Inter-Regular-4d3af571c1eaf96e1e58f88a158ff9107e7aa77e5dce7f5e30cea5d7149c6f70.woff2?v=3.19) format("woff2"),
+ url(./Inter-Regular-4b29689e4f4c1352490a26f37f3f85f66cfe9927d523df5133817aa9585605b6.woff?v=3.19) format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:400
 }
 @font-face {
- font-family:'Gelion';
- src:url("./Gelion-MediumItalic.woff2") format("woff2"),
- url("../fonts/Gelion-MediumItalic.woff") format("woff");
- font-weight:500;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion Regular';
- src:url("./Gelion-RegularItalic.woff2") format("woff2"),
- url("../fonts/Gelion-RegularItalic.woff") format("woff");
- font-weight:normal;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion';
- src:url("./Gelion-Bold.woff2") format("woff2"),
- url("./assets/Gelion-Bold.woff") format("woff");
- font-weight:bold;
+ font-display:swap;
+ src:url(./Inter-Medium-64fed266406fcc96f7a47848817209e14a7f3d539503951b507239653512ae27.woff2?v=3.19) format("woff2"),
+ url(./Inter-Medium-19e101b3393b7e191aea89821889be6c311183ee6ff09ef7550ce244ecf0506d.woff?v=3.19) format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:500
 }
 @font-face {
- font-family:'Gelion';
- src:url("../Gelion-BoldItalic.woff2") format("woff2"),
- url("../fonts/Gelion-BoldItalic.woff") format("woff");
- font-weight:bold;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion Semi';
- src:url("./Gelion-SemiBoldItalic.woff2") format("woff2"),
- url("./assets/Gelion-SemiBoldItalic.woff") format("woff");
- font-weight:600;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion Semi';
- src:url("./Gelion-SemiBold.woff2") format("woff2"),
- url("./assets/Gelion-SemiBold.woff") format("woff");
- font-weight:600;
+ font-display:swap;
+ src:url(./Inter-SemiBold-28381713aacc71a223ce11847157ddaf66eed7fd93031590f41a1beabfc1dcb4.woff2?v=3.19) format("woff2"),
+ url(./Inter-SemiBold-858fdf0a5cfe89ac4670b0e14f0a149e5cfa0c8940787abd902bdbe687e8236f.woff?v=3.19) format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:600
 }
+@font-face {
+ font-display:swap;
+ src:url(./Inter-Bold-4555674e339a87091ab7087e93b2c5317d36b982dc924cb89f3011faa11f23eb.woff2?v=3.19) format("woff2"),
+ url(./Inter-Bold-1cf2ebd9c0f917fda615bfd44b90030cff6b285be3d80190625b52df381884f5.woff?v=3.19) format("woff");
+ font-family:inter;
+ font-style:normal;
+ font-weight:700
+}
+@font-face {
+ font-display:swap;
+ src:url(./Inter-ExtraBold-62b671b7dae77e15742ef7b59da2ade290b482d8afef12ac1ee7b028f8f5fe4c.woff2?v=3.19) format("woff2"),
+ url(./Inter-ExtraBold-b3564c1b64071e92e85b485c2d8382c10e505eaff26672ae1ceadfb21c1219d5.woff?v=3.19) format("woff");
+ font-family:inter;
+ font-style:normal;
+ font-weight:800
+}
+@font-face {
+ font-display:swap;
+ src:url(./Inter-Black-030d18fa90ef6ce987d5bc8c71ebf231ebfd3f5a5b1ab90fbd8037342fa05f46.woff2?v=3.19) format("woff2"),
+ url(./Inter-Black-0c8e980ecdfdcf5e98c4e15f38752a74b64283007e86a85855eaf2cd923faee1.woff?v=3.19) format("woff");
+ font-family:inter;
+ font-style:normal;
+ font-weight:900
+}
+@font-face {
+ font-display:swap;
+ src:url(./Inter-roman.var-aeb2cf0cef7bfee8177fd8aeaa94dae3440d1701b6e1671918b70cdaa1ca639b.woff2?v=3.19) format("woff2");
+ font-family:inter var;
+ font-style:normal;
+ font-weight:100 900
+}
+
+
 :root {
  --grid-gap: 1.3vw;
  --accent-color: #000;
@@ -357,7 +358,7 @@ video {
  padding:0;
  border:0;
  font-size:100%;
- font-family: Gelion;
+ font-family: inter !important;
  font:inherit;
  vertical-align:baseline
 }
