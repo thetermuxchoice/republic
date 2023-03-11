@@ -45,7 +45,7 @@
 		/>
 		<link rel="stylesheet" href="style.css"/>
 		
-		<link href="https://fonts.cdnfonts.com/css/gelion?styles=117683,117684,117679,117681,117685,117677,117675" rel="stylesheet">
+		<!-- <link href="https://fonts.cdnfonts.com/css/gelion?styles=117683,117684,117679,117681,117685,117677,117675" rel="stylesheet"> -->
                
 
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -87,30 +87,29 @@
 
 .chart__container {
       border-radius: 8px;
-    left: -30px;
+   
     background-color: #273241;
-    width:139%;
-	
+    width:680px;
+	height:520px;
   flex: 0 0 auto;
   box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
   }
   
   
- 
   
   
- @media only screen(max-width: 641px){
+ @media only screen(max-width: 640px){
  .chart__container {
   width:100%;
-  left: 0px;grid-column:2/12;
+  <!-- grid-column:2/12; -->
   }
    }
 
 @media only screen(max-width: 1198px){
 .chart__container {
-  left: 0px;
+  <!-- left: 0px; -->
   width:100%;
-  grid-column:4/12;
+  <!-- grid-column:4/12; -->
   }
   }
 
@@ -140,6 +139,12 @@
     transform: none !important;
   }
 }
+
+[data-aos] {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 
 <!-- @media (max-width: 700px) { -->
     <!-- .container { -->
@@ -192,7 +197,7 @@
                 
                                     <div class="ct ct--button white" data-component="button">
 
-					<a class="ct--button__container js-button-container  " href="signup.html" >
+					<a class="ct--button__container js-button-container  " href="#" >
 	
 		<span class="ct--button__container__background">
 			<span class="ct--button__container__background__circle js-button-circle"></span>
@@ -327,10 +332,7 @@
 </div>
 
             <div class="container-canvas js-fixed-video" style=""> 
-	<!-- <video loop muted autoplay class="fullscreen-video"> -->
-        <!-- <source src="assets/Finance.mp4" type="video/mp4"> -->
-        <!-- <source src="assets/Finance.mp4" type="video/mp4"> -->
-    <!-- </video> -->
+	
 			
              <canvas class="js-canvas-webgl"></canvas> 
          </div> 
@@ -342,14 +344,23 @@
 		<div class="ct--hero-1__p">
 Access vetted investment opportunities in startups, real estate, video games, and crypto.
 <div class="ct--homepage-strate-1__right__link">
+     <input class="string c-input c-input--required js-subscription_email_input c-input--large subscriptions-shared-join_form__email-input s-marginBottom0_5 js-tooltip_input" required="required" data-tippy-content="<div class='s-fontSize12 u-lineHeight1_3 u-fontWeight400 u-colorOpaqueBlack6 subscriptions-shared-join_form__terms'>
+By continuing you agree to our
+<a class=&quot;c-link c-link--inherit c-link--underline&quot; target=&quot;_blank&quot; href=&quot;/terms&quot;>terms</a>
+and
+<a class=&quot;c-link c-link--inherit c-link--underline&quot; target=&quot;_blank&quot; href=&quot;/privacy&quot;>privacy policy.</a>
+</div>
+" data-tippy-interactive="true" aria-required="true" placeholder="Enter your email" type="email" name="subscription[email]" id="subscription_email">
+										<div class="ct--homepage-strate-1__right__content style="justify-content:center;">
+					Investments are risky, illiquid and may result in total loss of capital.<a class="c-link c-link--underline c-link--inherit u-whiteSpaceNowrap" target="_blank" href="#">    Learn more</a>
+				</div>
+<div class="ct--homepage-strate-1__right__link">
+					<div class="ct ct--button " data-component="button">
 
-
-					<div class="ct ct--button ct--hero-1__boton" data-component="button" style ="justify-content:center;text-align:center;grid-column:1/7;position:relative">
-
-					<a class="ct--button__container js-button-container  " href="" >
+					<a class="ct--button__container js-button-container  " href="#" >
 	
 		<span class="ct--button__container__background">
-			<span class="ct--button__container__background__circle js-button-circle" type=""></span>
+			<span class="ct--button__container__background__circle js-button-circle" type="submit"></span>
 		</span>
         
 		<span class="ct--button__container__label">
@@ -361,6 +372,8 @@ Access vetted investment opportunities in startups, real estate, video games, an
 			</a>
 	
 </div>
+				</div>
+				
 
 				</div>
 </div>
@@ -370,14 +383,20 @@ Access vetted investment opportunities in startups, real estate, video games, an
 		
 		
 <!-- start chart.js -->
+<main id="content" class="main-content">
+       <div class="chart__container" >
+    <canvas id="chart" width="520" height="400"></canvas>
+  </div>
 
+    </main>
 <!-- end chart.js -->
 <!-- <div class="ct--homepage-strate-1__right"> -->
  
-  <div data-aos="fade-left" class="chart__container" style="position: relative; max-height:400px;">
-    <!-- <canvas  class="mchart" id="chart" width="523" height="400"></canvas> -->
-	<canvas   id="chart" ></canvas>
-  </div>
+  <!-- <div data-aos="fade-left" class="chart__container" style="position: relative; max-height:400px;"> -->
+    <!-- <!-- <canvas  class="mchart" id="chart" width="523" height="400"></canvas> --> -->
+	<!-- <canvas   id="chart" ></canvas> -->
+  <!-- </div> -->
+
     </div>
      
     <!-- </div> -->
@@ -1679,13 +1698,18 @@ Made in SF/NYC
 <script>
 		AOS.init({
 		 disable: window.innerWidth < 768,
+		 
 	    offset: 120,
 	    delay: 500,
 	    duration: 400,
-	    easing: 'ease'
+	    easing: 'ease',
   });
 </script>
+
+
 <script>
+
+
 	let ctx = document.getElementById("chart").getContext('2d');
 
 var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
@@ -1744,6 +1768,7 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+	//responsive:true,
       tooltips: {
         backgroundColor:'#fff',
         displayColors:false,
@@ -1774,6 +1799,10 @@ var chart = new Chart(ctx, {
     }
 });	
 </script>
+
+
+
+
 <script type="text/javascript">
 tarteaucitron.init({
     "privacyUrl": "", /* Privacy policy url */
