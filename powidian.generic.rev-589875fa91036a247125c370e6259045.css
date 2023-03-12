@@ -1,67 +1,60 @@
 @font-face {
- font-family:'Gelion';
- src:url("./Gelion-Regular.woff2") format("woff2"),
- url("../fonts/Gelion-Regular.woff") format("woff");
- font-weight:normal;
+ font-display:swap;
+ src:url('fonts/Inter-Light.woff2') format("woff2"),
+ url('fonts/Inter-Light.woff') format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:300
 }
 @font-face {
- font-family:'Gelion';
- src:url("./Gelion-Medium.woff2") format("woff2"),
- url("../fonts/Gelion-Medium.woff") format("woff");
- font-weight:500;
+ font-display:swap;
+ src:url('fonts/Inter-Regular.woff2') format("woff2"),
+ url('fonts/Inter-Regular.woff') format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:400
 }
 @font-face {
- font-family:'Gelion';
- src:url("./Gelion-MediumItalic.woff2") format("woff2"),
- url("../fonts/Gelion-MediumItalic.woff") format("woff");
- font-weight:500;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion Regular';
- src:url("./Gelion-RegularItalic.woff2") format("woff2"),
- url("../fonts/Gelion-RegularItalic.woff") format("woff");
- font-weight:normal;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion';
- src:url("./Gelion-Bold.woff2") format("woff2"),
- url("./assets/Gelion-Bold.woff") format("woff");
- font-weight:bold;
+ font-display:swap;
+ src:url('fonts/Inter-Medium.woff2') format("woff2"),
+ url('fonts/Inter-Medium.woff') format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:500
 }
 @font-face {
- font-family:'Gelion';
- src:url("../Gelion-BoldItalic.woff2") format("woff2"),
- url("../fonts/Gelion-BoldItalic.woff") format("woff");
- font-weight:bold;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion Semi';
- src:url("./Gelion-SemiBoldItalic.woff2") format("woff2"),
- url("./assets/Gelion-SemiBoldItalic.woff") format("woff");
- font-weight:600;
- font-style:italic;
- font-display:swap
-}
-@font-face {
- font-family:'Gelion Semi';
- src:url("./Gelion-SemiBold.woff2") format("woff2"),
- url("./assets/Gelion-SemiBold.woff") format("woff");
- font-weight:600;
+ font-display:swap;
+ src:url('fonts/Inter-SemiBold.woff2') format("woff2"),
+ url('fonts/Inter-SemiBold.woff') format("woff");
+ font-family:inter;
  font-style:normal;
- font-display:swap
+ font-weight:600
 }
+@font-face {
+ font-display:swap;
+ src:url('fonts/Inter-Bold.woff2') format("woff2"),
+ url('fonts/Inter-Bold.woff') format("woff");
+ font-family:inter;
+ font-style:normal;
+ font-weight:700
+}
+@font-face {
+ font-display:swap;
+ src:url('fonts/Inter-ExtraBold.woff2') format("woff2"),
+ url('fonts/Inter-ExtraBold.woff') format("woff");
+ font-family:inter;
+ font-style:normal;
+ font-weight:800
+}
+@font-face {
+ font-display:swap;
+ src:url('fonts/Inter-Black.woff2') format("woff2"),
+ url('fonts/Inter-Black.woff2') format("woff2");
+ font-family:inter;
+ font-style:normal;
+ font-weight:900
+}
+
 :root {
  --grid-gap: 1.3vw;
  --accent-color: #000;
