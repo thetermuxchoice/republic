@@ -12200,6 +12200,26 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
     .s-gridMaxXs24{
         max-width:1500px
     }
+    
+    @media all and (max-width: 320px){
+     .s-gridMaxXs24 {
+    max-width: 1500px;
+    min-width: 250px;
+    width: 100%;
+}   
+    }
+  
+
+    @media all and (max-width: 640px){
+     .s-gridMaxXs24 {
+    max-width: 1500px;
+    min-width: 100vw;
+    width: 100%;
+}   
+    }
+    
+  
+    
     .s-grid--preXs1,.s-gridC--preXs1,.s-grid0--preXs1{
         margin-left:4.16667%
     }
