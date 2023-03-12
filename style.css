@@ -1,13 +1,16 @@
 @font-face{
     src:url(./assets/fontello-b92d26b22c6bea4f187d9425935f57ccc4376714b6692c54bf3c44f689bf3e1b.eot?6317962);
     src:url(./assets/fontello-b92d26b22c6bea4f187d9425935f57ccc4376714b6692c54bf3c44f689bf3e1b.eot?6317962#iefix) format("embedded-opentype"),url(./assets/fontello-f10b3a70fe841c205dee9e1203b7009870890d42646a62c2b5f8f7c99aa40d5d.woff2?6317962) format("woff2"),url(./assets/fontello-c43b79afa52a19bcbb46503ccbf462d61a861ebb65d08310ebeeef7d864337bb.woff?6317962) format("woff"),url(./assets/fontello-077ee454e1d6e8bc7184ee0fdd44e1596ac72e9d9571caf2a11f27a275fde6c6.ttf?6317962) format("truetype"),url(./assets/fontello-8859d45b5d2380aa42520740938222e628c0658b2aebac793ef56b2e7efb31fe.svg?6317962#fontello) format("svg");
-  
+ 
    font-family:fontello;
     font-style:normal;
     font-weight:400
 }
-
+@import url(https://fonts.googleapis.com/css?family=Inter:200,300,400,500,600,700,800,900);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+
 
 // List of icons and colours
 $icon-list: (
@@ -5763,7 +5766,7 @@ hr.no_margin{
     font-size:0;
     line-height:0
 ;
-    font-family: 'Gelion';
+    font-family: 'Inter', sans-serif;
 }
 .c-tag-container .c-tag:not(:last-child),.c-tag-horizontal-container .c-tag:not(:last-child){
     margin-right:4px
@@ -14043,7 +14046,7 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
 }
 .u-verticalAlignMiddle{
     vertical-align: ;
-    font-family: 'Gelion';    middle;
+    font-family: 'Inter', sans-serif;    middle;
 }
 .u-verticalAlignBottom{
     vertical-align:bottom
@@ -14112,7 +14115,7 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
     -ms-flexbox;
     display:
     flex;
-    font-family: 'Gelion';
+    font-family: 'Inter', sans-serif;
 }
 @media all and (max-width: 767px){
     .u-displayFlex--responsive{
@@ -14637,9 +14640,9 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
     color:#444
 }
 .u-colorGray5{
-    color:#555
-;
-    font-family: 'Gelion';
+    color:#555;
+     font-family: 'inter';
+    font-size: 65%;
 }
 .u-colorGray6{
     color:#666
@@ -14653,7 +14656,7 @@ a.c-tag-highlight:active:after,a.c-tag-highlight:hover:after,a.c-tag-highlight:f
 .u-colorGray9{
     color:#999
 ;
-    font-family: 'Gelion';
+    font-family: 'Inter', sans-serif;
 }
 .u-colorGrayA{
     color:#aaa
